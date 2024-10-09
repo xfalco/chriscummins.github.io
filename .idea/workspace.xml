@@ -1,22 +1,52 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="e81494d0-a6cb-4a57-ba14-924b183ebeef" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/Gemfile" afterPath="$PROJECT_DIR$/Gemfile" />
-      <change beforePath="$PROJECT_DIR$/_config.yml" afterPath="$PROJECT_DIR$/_config.yml" />
-      <change beforePath="$PROJECT_DIR$/_includes/favicons.html" afterPath="$PROJECT_DIR$/_includes/favicons.html" />
-      <change beforePath="$PROJECT_DIR$/_layouts/default.html" afterPath="$PROJECT_DIR$/_layouts/default.html" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/art/ashleigh-small.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/img/art/ashleigh-small.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/art/banff-1-small.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/img/art/banff-1-small.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/art/birmingham-1-small.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/img/art/birmingham-1-small.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/art/birmingham-2-small.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/img/art/birmingham-2-small.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/art/birmingham-3-small.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/img/art/birmingham-3-small.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/art/birmingham-4-small.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/img/art/birmingham-4-small.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/art/birmingham-5-small.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/img/art/birmingham-5-small.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/art/birmingham-6-small.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/img/art/birmingham-6-small.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/art/birmingham-7-small.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/img/art/birmingham-7-small.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/art/birmingham-8-small.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/img/art/birmingham-8-small.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/art/birmingham-9-small.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/img/art/birmingham-9-small.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/art/colmar-small.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/img/art/colmar-small.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/art/death-valley-small.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/img/art/death-valley-small.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/art/lake-wanaka-small.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/img/art/lake-wanaka-small.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/art/loch-lomond-2-small.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/img/art/loch-lomond-2-small.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/art/loch-lomond-small.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/img/art/loch-lomond-small.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/art/manhattan-2-small.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/img/art/manhattan-2-small.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/art/manhattan-3-small.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/img/art/manhattan-3-small.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/art/manhattan-small.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/img/art/manhattan-small.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/art/matterhorn-small.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/img/art/matterhorn-small.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/art/mt-rainier-small.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/img/art/mt-rainier-small.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/art/nature-aquarium-1-small.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/img/art/nature-aquarium-1-small.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/art/nature-aquarium-2-small.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/img/art/nature-aquarium-2-small.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/art/north-cascades-1-small.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/img/art/north-cascades-1-small.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/art/north-cascades-2-small.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/img/art/north-cascades-2-small.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/art/poisoned-glen-small.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/img/art/poisoned-glen-small.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/art/steam-engine-small.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/img/art/steam-engine-small.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/art/stirling-small.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/img/art/stirling-small.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/art/tokyo-small.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/img/art/tokyo-small.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/art/trillium-lake-small.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/img/art/trillium-lake-small.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/art/uluru-small.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/img/art/uluru-small.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/art/whistler-small.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/img/art/whistler-small.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/art/yosemite-small.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/img/art/yosemite-small.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/genetics.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/genetics.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/s/genetics/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/s/genetics/index.html" afterDir="false" />
     </list>
-    <ignored path="$PROJECT_DIR$/out/" />
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
-    <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="FavoritesManager">
-    <favorites_list name="chriscummins.cc" />
   </component>
   <component name="FileEditorManager">
     <leaf>
@@ -90,10 +120,14 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 8
+}]]></component>
   <component name="ProjectFrameBounds" fullScreen="true">
     <option name="width" value="1280" />
     <option name="height" value="800" />
   </component>
+  <component name="ProjectId" id="2nBRRK0s4AAKmuF7wZYOWicutSZ" />
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
       <profile-state>
@@ -236,26 +270,24 @@
       <pane id="PackagesPane" />
     </panes>
   </component>
-  <component name="PropertiesComponent">
-    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.appearance" />
-    <property name="project.structure.last.edited" value="Project" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.2" />
+  <component name="ProjectViewState">
+    <option name="autoscrollFromSource" value="true" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "last_opened_file_path": "/Volumes/git/chriscummins.github.io",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
   <component name="RunManager">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="HTML_USED" value="false" />
@@ -277,6 +309,12 @@
       <module name="" />
       <envs />
     </configuration>
+    <configuration name="&lt;template&gt;" type="JUnit" default="true" selected="false">
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+    </configuration>
     <configuration default="true" type="Remote" factoryName="Remote">
       <option name="USE_SOCKET_TRANSPORT" value="true" />
       <option name="SERVER_MODE" value="false" />
@@ -284,28 +322,27 @@
       <option name="HOST" value="localhost" />
       <option name="PORT" value="5005" />
     </configuration>
-    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
-      <module name="" />
-      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
-      <option name="PROGRAM_PARAMETERS" />
-      <predefined_log_file id="idea.log" enabled="true" />
-    </configuration>
-    <configuration name="&lt;template&gt;" type="JUnit" default="true" selected="false">
-      <option name="MAIN_CLASS_NAME" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-    </configuration>
     <configuration name="&lt;template&gt;" type="TestNG" default="true" selected="false">
       <option name="MAIN_CLASS_NAME" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
     </configuration>
+    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
+      <module name="" />
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
+      <option name="PROGRAM_PARAMETERS" />
+      <predefined_log_file id="idea.log" enabled="true" />
+    </configuration>
   </component>
-  <component name="ShelveChangesManager" show_recycled="false">
-    <option name="remove_strategy" value="false" />
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-1d06a55b98c1-2e7d6887c066-JavaScript-WS-241.15989.47" />
+      </set>
+    </attachedChunks>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="e81494d0-a6cb-4a57-ba14-924b183ebeef" name="Default" comment="" />
@@ -314,6 +351,7 @@
       <option name="presentableId" value="Default" />
       <updated>1517624580005</updated>
       <workItem from="1517624581432" duration="3824000" />
+      <workItem from="1728444473563" duration="4360000" />
     </task>
     <servers />
   </component>
@@ -347,14 +385,7 @@
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
-  </component>
-  <component name="VcsContentAnnotationSettings">
-    <option name="myLimit" value="2678400000" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager />
-    <watches-manager />
+    <option name="version" value="3" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/README.md">

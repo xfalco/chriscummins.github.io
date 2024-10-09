@@ -42,6 +42,7 @@ var Genetics = Genetics || {};
 
   /* Genetics options.
    */
+  var sessionName;
   var populationSize;
   var selectionCutoff;
   var mutationChance;
@@ -115,15 +116,19 @@ var Genetics = Genetics || {};
   /*
    * Creates a new individual. Each individual comprises of their string of DNA,
    * and their fitness. In addition, a draw() method is provided for visualising
-   * the individual. If mother and father are omitted, a random individual is
-   * generated.
+   * the individual. If a dna string is provided, the Individual is initialized with it.
+   * Otherwise, the individual is created either from provided mother and father dnas, or is randomly generated.
    */
-  function Individual(mother, father) {
+  function Individual(opts) {
+    const mother = opts?.mother;
+    const father = opts?.father;
 
     /* The individual's genetic composition */
     this.dna = [];
 
-    if (mother && father) {
+    if (opts?.dna) {
+      this.dna = opts.dna
+    } else if (mother && father) {
 
       /*
        * Breed from mother and father:
@@ -281,16 +286,25 @@ var Genetics = Genetics || {};
     }
   };
 
+
+
   /*
-   * This object represents a entire population, composed of a number of
-   * individuals. It provides a iterate() function to breed a new generation.
+   * This object represents an entire population, composed of a number of
+   * individuals. It provides an iterate() function to breed a new generation.
+   * It may be initialized from a list of individual dnas.
    */
-  function Population(size) {
+  function Population(opts) {
     this.individuals = [];
 
-    /* Generate our random starter culture */
-    for (var i = 0; i < size; i++)
-      this.individuals.push(new Individual());
+    if (opts.individuals) {
+      this.individuals = opts.individuals.map(individualDna => new Individual(individualDna));
+    } else {
+      const size = opts.size;
+      /* Generate our random starter culture */
+      for (var i = 0; i < size; i++) {
+        this.individuals.push(new Individual());
+      }
+    }
 
   }
 
@@ -331,8 +345,8 @@ var Genetics = Genetics || {};
           while (randIndividual == i)
             randIndividual = (Math.random() * selectCount) >> 0;
 
-          offspring.push(new Individual(this.individuals[i].dna,
-                                        this.individuals[randIndividual].dna));
+          offspring.push(new Individual({mother: this.individuals[i].dna,
+                                        father: this.individuals[randIndividual].dna}));
         }
       }
 
@@ -352,7 +366,7 @@ var Genetics = Genetics || {};
        */
 
       var parent = this.individuals[0];
-      var child = new Individual(parent.dna, parent.dna);
+      var child = new Individual({mother: parent.dna, father: parent.dna});
 
       if (child.fitness > parent.fitness)
         this.individuals = [child];
@@ -579,7 +593,8 @@ var Genetics = Genetics || {};
    * Retrieve the session from the configuration panel
    */
   function getConfiguration() {
-
+    sessionName = $('#session-name').val() || undefined;
+    sessionName = sessionName ? `genetics.${sessionName}` : undefined;
     populationSize = parseInt($('#population-size').text());
     selectionCutoff = parseFloat($('#cutoff').text()) / 100;
     fittestSurvive = $('#fittest-survive')[0].checked;
@@ -603,6 +618,26 @@ var Genetics = Genetics || {};
     workingCanvas.style.height = workingSize;
   }
 
+  function loadPopulation() {
+    if (sessionName) {
+      const item = localStorage.getItem(sessionName);
+      if (item) {
+        const individuals = JSON.parse(item).individuals;
+        return new Population({individuals: individuals});
+      }
+    }
+    return new Population({size: populationSize});
+  }
+
+  function savePopulation() {
+    if (sessionName && population) {
+      const serialized = JSON.stringify({
+        individuals: population.individuals.map(individual => individual.dna),
+      })
+      localStorage.setItem(sessionName, serialized);
+    }
+  }
+
 
   /*
    * Run the simulation.
@@ -618,7 +653,7 @@ var Genetics = Genetics || {};
       jiffies = 0;
       numberOfImprovements = 0;
       startTime = new Date().getTime();
-      population = new Population(populationSize);
+      population = loadPopulation();
     }
 
     /* Each tick produces a new population and new fittest */
@@ -627,6 +662,10 @@ var Genetics = Genetics || {};
       /* Breed a new generation */
       population.iterate();
       jiffies++;
+
+      if (jiffies % 10 === 0) {
+        savePopulation();
+      }
 
       var fittest = population.getFittest();
       var totalTime = ((new Date().getTime() - startTime) / 1000);
@@ -837,11 +876,11 @@ var Genetics = Genetics || {};
     outputCtx = outputCanvas.getContext('2d');
 
     workingCanvas = $('#workingCanvas')[0];
-    workingCtx = workingCanvas.getContext('2d');
+    workingCtx = workingCanvas.getContext('2d', {willReadFrequently: true});
 
     referenceImage = $('#referenceImage')[0];
     referenceCanvas = $('#referenceCanvas')[0];
-    referenceCtx = referenceCanvas.getContext('2d');
+    referenceCtx = referenceCanvas.getContext('2d', {willReadFrequently: true});
 
     /* Analytics panel */
     ap = {
